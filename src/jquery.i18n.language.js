@@ -553,15 +553,7 @@
 				pluralForms = [ 'zero', 'one', 'two', 'few', 'many', 'other' ],
 				pluralFormIndex = 0;
 
-			for ( i = 0; i < pluralForms.length; i++ ) {
-				if ( pluralRules[pluralForms[i]] ) {
-					if ( pluralRuleParser( pluralRules[pluralForms[i]], number ) ) {
-						return pluralFormIndex;
-					}
-
-					pluralFormIndex++;
-				}
-			}
+			
 
 			return pluralFormIndex;
 		},
